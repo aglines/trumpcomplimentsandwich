@@ -17,40 +17,45 @@ def assembleText():
     randMid = randint(0,29)
     randOutro = randint(0,19)
 
+# changing these to ascii hex codes for urlToTweet
+#   %20 for space
+#   %21 for exclamation point
+#   %27 for single quote
+#   %2E for period
     listIntro = [
-    'MAGA TRUMP!',
-    'TRUMP 2020!',
-    'TRUMP America Great!',
-    'Keep America TRUMP! ',
-    'TRUMP steaks great! ',
-    'TRUMP Tower lu$$xury!',
-    'TRUMP #1!',
-    'So great TRUMP!',
-    'Handsomest Prez ever TRUMP!',
-    'TRUMP $$$!',
-    '$$ TRUMP so rich!',
-    'TRUMP the BEST!',
-    'TRUMP strongman POWER!',
-    'TRUMPs handsome genes!',
-    'Clear WINNER!',
-    'TRUMP knows!',
-    'World\'s. Best. TRUMP!',
-    'My hero TRUMP!',
-    'Rename it TRUMPDAY!',
-    'Winning TRUMP!']
+    'MAGA%20TRUMP%21',
+    'TRUMP%202020%21',
+    'TRUMP%20America%20Great%21',
+    'Keep%20America%20TRUMP%21',
+    'TRUMP%20steaks%20great%21',
+    'TRUMP%20Tower%20lu$$xury%21',
+    'TRUMP%20#1%21',
+    'So%20great%20TRUMP%21',
+    'Handsomest%20Prez%20TRUMP%21',
+    'TRUMP%20$$$%21',
+    '$$%20TRUMP%20so%20rich%21',
+    'TRUMP%20the%20BEST%21',
+    'TRUMP%20strong%20POWER%21',
+    'TRUMPs%20handsome%20genes%21',
+    'Clear%20WINNER%21',
+    'TRUMP%20knows%21',
+    'World%27s%2E%20Best%2E%20TRUMP%21',
+    'My%20hero%20TRUMP%21',
+    'Rename%20it%20TRUMPDAY%21',
+    'Winning%20TRUMP%21']
 
     listMid = [
-    'jail for you.',
-    'you\'re gonna die in prison.',
+    'jail%20time%20for%20you.',
+    'you%27re gonna die in prison.',
     'your father never loved you.',
     'your dad never cared about you.',
-    'DC lawyers all know you\'re poison.',
-    'you can\'t trust your men anymore.',
+    'DC lawyers all know you%27re poison.',
+    'you can%27t trust your men anymore.',
     'impeached before long.',
     'no lawyer is dumb enough to defend you now.',
-    'everyone knows you\'re poor.',
+    'everyone knows you%27re poor.',
     'you feel old and you look old.',
-    'we can all see you\'re horribly bald.',
+    'we can all see you%27re horribly bald.',
     'walls are closing in.',
     'lawyers are too smart for you.',
     'lawyers can smell your lies.',
@@ -62,39 +67,39 @@ def assembleText():
     'ivanka and jared are ratting on you.',
     'lawyers are all jumping ship.',
     'hope hicks is ratting on you now too.',
-    'ivanka talked to mueller can\'t trust her.',
-    'don jr talk to mueller can\'t trust him.',
+    'ivanka talked to mueller can%27t trust her.',
+    'don jr talk to mueller can%27t trust him.',
     'jared talked to mueller.',
-    'can\'t trust them better fire them.',
-    'can\'t even trust your bodyguards now.',
-    'they\'re coming for you.',
-    'they\'re going to get you in your sleep.',
-    'don\'t trust your bodyguards.']
+    'can%27t trust them better fire them.',
+    'can%27t even trust your bodyguards now.',
+    'they%27re coming for you.',
+    'they%27re going to get you in your sleep.',
+    'don%27t trust your bodyguards.']
 
     listOutro = [
-    'TRUMP family 4ever!',
-    'TRUMP give em hell!',
-    'TrUmP!',
-    'TRUMP Richest Prez!',
-    'TRUMP Best Potus ever!',
-    'Trump Power!',
-    'TRUMP Muscle!',
-    'TRUMP America!',
-    'TRUMP America GREAT!',
-    'TRUMP Tower GOLD$$!',
-    'TRUMP $$!!',
-    '$$ TRUMP so rich!',
-    'TRUMP Tower $trong!',
-    'TRUMP America Great Again!',
-    'MAGA bitches!!',
-    'MAGA 2024!',
-    'MAGA Biggest fans!',
-    'TRUMP MAGA biggest ever!',
-    'MAGA 2020!',
-    '2020 TRUMP!'
+    'TRUMP family 4ever%21',
+    'TRUMP give em hell%21',
+    'TrUmP%21',
+    'TRUMP Richest Prez%21',
+    'TRUMP Best Potus ever%21',
+    'Trump Power%21',
+    'TRUMP Muscle%21',
+    'TRUMP America%21',
+    'TRUMP America GREAT%21',
+    'TRUMP Tower GOLD$$%21',
+    'TRUMP $$%21%21',
+    '$$ TRUMP so rich%21',
+    'TRUMP Tower $trong%21',
+    'TRUMP America Great Again%21',
+    'MAGA bitches%21%21',
+    'MAGA 2024%21',
+    'MAGA Biggest fans%21',
+    'TRUMP MAGA biggest ever%21',
+    'MAGA 2020%21',
+    '2020 TRUMP%21'
     ]
 
-    sandwich = '@realDonaldTrump ' + listIntro[randIntro] + ' ' + listMid[randMid] + ' ' + listOutro[randOutro]
+    sandwich = '@realDonaldTrump%20' + listIntro[randIntro] + ' ' + listMid[randMid] + ' ' + listOutro[randOutro]
 
     return sandwich
 
