@@ -7,7 +7,10 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     tweetText = assembleText()
-    return render_template('index.html', tweetText=tweetText)
+    tweetURL = assembleURL(tweetText)
+    return render_template('index.html', tweetText=tweetText, tweetURL=tweetURL)
+
+
 
 def assembleText():
     randIntro = randint(0,19)
@@ -94,3 +97,7 @@ def assembleText():
     sandwich = '@realDonaldTrump ' + listIntro[randIntro] + ' ' + listMid[randMid] + ' ' + listOutro[randOutro]
 
     return sandwich
+
+def assembleURL(tweetText):
+    urlToTweet='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftrumpcompliments.com%2F&ref_src=twsrc%5Etfw&text=' + tweetText + '&tw_p=tweetbutton&url=http%3A%2F%2Ftrumpcompliments.com'
+    return urlToTweet
