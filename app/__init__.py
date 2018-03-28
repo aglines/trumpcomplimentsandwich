@@ -91,6 +91,6 @@ def assembleText():
     '2020 TRUMP!'
     ]
 
-    sandwich = '@realDonaldTrump' + listIntro[randIntro] + ' ' + listMid[randMid] + ' ' + listOutro[randOutro]
+    sandwich = '@realDonaldTrump ' + listIntro[randIntro] + ' ' + listMid[randMid] + ' ' + listOutro[randOutro]
 
     return sandwich
