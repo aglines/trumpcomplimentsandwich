@@ -44,8 +44,8 @@ def assembleURL(tweetText):
 
     tweetText = re.sub(' ','%20',tweetText)
     tweetText = re.sub('!','%21',tweetText)
-    tweetText = re.sub('\'','%27',tweetText)
-    tweetText = re.sub('.','%2E',tweetText)
+    tweetText = re.sub("'",'%27',tweetText)
+    tweetText = re.sub('\.','%2E',tweetText)
     tweetText = re.sub('$','%24',tweetText)
     tweetText = re.sub('#','%23',tweetText)
 
