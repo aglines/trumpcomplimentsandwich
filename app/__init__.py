@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 from random import randint
+import re
+
 
 # Initialize application
 app = Flask(__name__)
@@ -9,7 +11,6 @@ def hello():
     tweetText = assembleText()
     tweetURL = assembleURL(tweetText)
     return render_template('index.html', tweetText=tweetText, tweetURL=tweetURL)
-
 
 
 def assembleText():
@@ -41,8 +42,13 @@ def assembleURL(tweetText):
 
     #tweetText substitution here
 
-    urlToTweet='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftrumpcompliments.com%2F&ref_src=twsrc%5Etfw&text=' + tweetText + '&tw_p=tweetbutton&url=http%3A%2F%2Ftrumpcompliments.com'
+    tweetText = re.sub(' ','%20',tweetText)
+    tweetText = re.sub('!','%21',tweetText)
+    tweetText = re.sub('\'','%27',tweetText)
+    tweetText = re.sub('.','%2E',tweetText)
+    tweetText = re.sub('$','%24',tweetText)
+    tweetText = re.sub('#','%23',tweetText)
 
-    #this will now have no spaces, will be approp for url
+    urlToTweet='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftrumpcompliments.com%2F&ref_src=twsrc%5Etfw&text=' + tweetText + '&tw_p=tweetbutton&url=http%3A%2F%2Ftrumpcompliments.com'
 
     return urlToTweet
