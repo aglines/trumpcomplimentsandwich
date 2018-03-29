@@ -46,7 +46,7 @@ def assembleURL(tweetText):
     tweetText = re.sub('!','%21',tweetText)
     tweetText = re.sub("'",'%27',tweetText)
     tweetText = re.sub('\.','%2E',tweetText)
-    tweetText = re.sub('$','%24',tweetText)
+    tweetText = re.sub('\$','%24',tweetText)
     tweetText = re.sub('#','%23',tweetText)
 
     urlToTweet='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftrumpcompliments.com%2F&ref_src=twsrc%5Etfw&text=' + tweetText + '&tw_p=tweetbutton&url=http%3A%2F%2Ftrumpcompliments.com'
