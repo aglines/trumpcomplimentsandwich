@@ -9,6 +9,25 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Trump Compliment Sandwich</title>
+
+<style>
+  #window1 {
+    border-radius: 25px;
+    border 2px solid #FF00EE;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+
+  #window2 {
+
+  }
+
+  #window3 {
+
+  }
+</style>
+
 </head>
 
 <body>
@@ -19,17 +38,18 @@
     <div class="col">
       <div class="text-center">
         <div class="alert alert-primary" role="alert">
-          {{ tweetText }}
-
 
           <div class="alert alert-secondary" role="alert">
-            {{ tweetText }}
-          </div> <!--alert div-->
-
+            {{ tweetIntro }}
+          </div>
+          <div class="alert alert-danger" role="alert">
+            {{ tweetMid }}
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            {{ tweetOutro }}
+          </div>
 
         </div> <!--alert div-->
-
-
 
 
       </div>
