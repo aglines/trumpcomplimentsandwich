@@ -18,30 +18,40 @@
     width: 200px;
     height: 150px;
   }
-
-  #window2 {
-
-  }
-
-  #window3 {
-
-  }
 </style>
-
 </head>
 
 <body>
 
+
 <div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <img class="img-fluid" src="{{url_for('static', filename='logo.jpg')}}" />
+    </div>
+  </div>
 
   <div class="row">
     <div class="col">
       <div class="text-center">
         <div class="alert alert-primary" role="alert">
 
-          <div class="alert alert-secondary" role="alert">
-            {{ tweetIntro }}
+          <div class="container">
+          <div class="row">
+            <div class="alert alert-secondary" role="alert">
+              <div class="col-8">
+                {{ tweetIntro }}
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="{{url_for('static', filename='trumpintro.jpg')}}" />
+              </div>
+            </div>
           </div>
+          </div>
+
+
+
+
           <div class="alert alert-danger" role="alert">
             {{ tweetMid }}
           </div>
