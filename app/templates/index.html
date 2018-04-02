@@ -23,50 +23,61 @@
 
 <body>
 
-
+<!-- LOGO -->
 <div class="container">
   <div class="row">
     <div class="col text-center">
       <img class="img-fluid" src="{{url_for('static', filename='logo.jpg')}}" />
     </div>
   </div>
+</div>
 
+<!-- === SANDWICH === -->
+<div class="container">
   <div class="row">
     <div class="col">
       <div class="text-center">
-        <div class="alert alert-primary" role="alert">
-
-          <div class="container">
+        <div class="alert alert-secondary" role="alert">
+        <div class="container">
           <div class="row">
-            <div class="alert alert-secondary" role="alert">
-              <div class="col-8">
+              <div class="col-8 bg-dark text-white align-middle">
+                <div class="my-auto">
                 {{ tweetIntro }}
+                </div>
               </div>
               <div class="col-4">
-                <img class="img-fluid" src="{{url_for('static', filename='trumpintro.jpg')}}" />
+                <img class="img-fluid" src="{{url_for('static', filename='trumpintro.jpg')}}" width="150px" height="150px" />
               </div>
-            </div>
           </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-8 bg-dark text-white align-middle">
+                <div class="my-auto">
+                {{ tweetMid }}
+                </div>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="{{url_for('static', filename='trumpmid.jpg')}}" width="150px" height="150px" />
+              </div>
           </div>
-
-
-
-
-          <div class="alert alert-danger" role="alert">
-            {{ tweetMid }}
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-8 bg-dark text-white align-middle">
+                <div class="my-auto">
+                {{ tweetOutro }}
+                </div>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="{{url_for('static', filename='trumpoutro.jpg')}}" width="150px" height="150px" />
+              </div>
           </div>
-          <div class="alert alert-secondary" role="alert">
-            {{ tweetOutro }}
-          </div>
-
-        </div> <!--alert div-->
-
-
+        </div>
+        </div>
       </div>
     </div>
   </div>
-
-
   <div class="row">
     <div class="col">
       <div class="text-center">
@@ -77,10 +88,29 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- FAQ -->
+<div class="container">
+
+  <div class="row">
+    <div class="align-middle bg-lightblue text-white">
+      <div class="my-auto">
+      It's when you sneak a criticism between two compliments, so that a narcissist has a better chance of paying attention to the criticism.
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="align-middle bg-lightblue text-white">
+      <div class="my-auto">
+        <img class="img-fluid" src="{{url_for('static', filename='attentiongraph.jpg')}}" width="600px" height="150px" />
+      </div>
+    </div>
+  </div>
 
 
 </div>
-
 
 </body>
 </html>
