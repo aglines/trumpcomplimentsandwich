@@ -12,25 +12,24 @@
 
 <style>
 .tweet1 {
-  background:lightgray;
+  font-size:1.5rem;
+  background:#ffae00;
   color:black;
   text-align: center;
 }
 
 .tweet2 {
-  background:darkred;
-  color:white;
+  font-size:1.5rem;
+  background:#ff0000;
+  color:black;
   text-align: center;
 }
 
-.my-flex-container {
-    border: 2px solid green;
-  }
 
-.my-flex-item {
-  border: 2px solid red;
-}
 </style>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -63,32 +62,43 @@
 </div>
 
 
-
-<div class="container" style="margin-top:1em;margin-bottom:1em">
+<!-- TWEET BUTTON -->
+<div class="container" style="margin-top:1em;margin-bottom:3em">
   <a class="btn btn-primary p-2" style="width:100%" target="_blank" role="button"
   href= {{ tweetURL }}>
-  Tweet this to @realDonaldTrump
+  <i class="fab fa-twitter"></i> Tweet this to @realDonaldTrump
   </a>
+
+  <p style="text-align:center"><a href="/">Reload to generate a different tweet</a></p>
 </div>
+
+<!-- RELOAD -->
+
 
 <!-- FAQ -->
 <div class="container">
 
   <div class="row">
     <div class="col">
-      <p>What's a compliment sandwich?</p>
-      <p>It's when you sneak a criticism between two compliments, so that a narcissist has a better chance of paying attention to the criticism.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="align-middle bg-lightblue text-white">
-      <div class="my-auto">
+      <p><em>What's a compliment sandwich?</em></p>
+      <p>It's a way to give a criticism to a narcissist, because they refuse or are unable to hear anything but compliments.</p>
+      <p><em>How does it work?</em></p>
+      <div>
         <img class="img-fluid" src="{{url_for('static', filename='attentiongraph.jpg')}}" width="600px" height="150px" />
       </div>
+      <p>1. Give them a compliment and they will begin paying attention</p>
+      <p>2. With their focus now on your words, deliver a critique.  Warning: attention levels will immediately drop</p>
+      <p>3. Before you lose them, say another compliment.  There is a better chance they will have heard the critique in the middle.</p>
+
+      <p><em>Why Donald Trump?</em></p>
+      <p>This is a popular technique in the workplace, so why not apply it to the halls of power?  A compliment that will hook Trump can be extremely simple: mindless jingoism, pure lies, or just his name rendered in shiny dollar signs.</p>
+
+      <p><em>Why aren't you doing something better with your time?</em></p>
+      <p>That's a great idea! After tweeting, get more involved by contacting your congresspeople(LINK)!</p>
+
+
     </div>
   </div>
-
 
 </div>
 
