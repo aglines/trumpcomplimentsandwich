@@ -2,11 +2,11 @@ from flask import Flask, render_template
 from random import randint
 import re
 
-
 # Initialize application
 app = Flask(__name__)
 
 @app.route('/')
+
 def tweet():
     tweetIntro = assembleIntro()
     tweetMid = assembleMid()
