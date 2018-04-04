@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Trump Compliment Sandwich</title>
+  <title>Trump Compliment Sandwich</title>
 
 <style>
 body{
@@ -20,15 +17,12 @@ body{
   color:black;
   text-align: center;
 }
-
 .tweet2 {
   font-size:1.5rem;
   background:#dda083;
   color:black;
   text-align: center;
 }
-
-
 </style>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -37,10 +31,10 @@ body{
 
 <body>
 
-<!-- LOGO -->
+<!-- === LOGO === -->
 <div class="container">
-  <div class="row">
-    <div class="col text-center">
+  <div class="d-flex align-items-center">
+    <div class="p-3">
       <img class="img-fluid" src="{{url_for('static', filename='logo.png')}}" />
     </div>
   </div>
@@ -49,55 +43,49 @@ body{
 <!-- === SANDWICH === -->
 <div class="container">
 <div class="d-flex align-items-center tweet1">
-  <div class="p-2 col-10">{{ tweetIntro }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpintro.png')}}" alt="Donald Trump looking smug"  /></div>
+  <div class="p-2 col-8">{{ tweetIntro }}</div>
+  <div class="p-2 col-4"><img class="img-fluid" src="{{url_for('static', filename='trumpintro.png')}}" alt="Donald Trump looking smug"  /></div>
 </div>
 
 <div class="d-flex align-items-center tweet2">
-  <div class="p-2 col-10">{{ tweetMid }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpmid.png')}}" alt="Donald Trump looking angry"/></div>
+  <div class="p-2 col-8">{{ tweetMid }}</div>
+  <div class="p-2 col-4"><img class="img-fluid" src="{{url_for('static', filename='trumpmid.png')}}" alt="Donald Trump looking angry"/></div>
 </div>
 
 <div class="d-flex align-items-center tweet1">
-  <div class="p-2 col-10">{{ tweetOutro }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpoutro.png')}}" alt="Donald Trump trying to look smug"/></div>
+  <div class="p-2 col-8">{{ tweetOutro }}</div>
+  <div class="p-2 col-4"><img class="img-fluid" src="{{url_for('static', filename='trumpoutro.png')}}" alt="Donald Trump trying to look smug"/></div>
 </div>
 </div>
 
-
-<!-- TWEET BUTTON -->
+<!-- TWEET OR RELOAD -->
 <div class="container" style="margin-top:1em;margin-bottom:3em">
   <a class="btn btn-primary p-2" style="width:100%" target="_blank" role="button"
   href= {{ tweetURL }}>
   <i class="fab fa-twitter"></i> Tweet this to @realDonaldTrump
   </a>
-
   <p style="text-align:center"><a href="/">Reload to generate a different tweet</a></p>
 </div>
 
-<!-- RELOAD -->
-
-
 <!-- FAQ -->
 <div class="container">
-
   <div class="row">
     <div class="col">
       <p><em>What's a compliment sandwich?</em></p>
       <p>It's a way to give a criticism to a narcissist, because they refuse or are unable to hear anything but compliments.</p>
       <p><em>How does it work?</em></p>
       <div>
-        <img class="img-fluid" src="{{url_for('static', filename='attentiongraph.jpg')}}" width="600px" height="150px" />
+        <img class="img-fluid" src="{{url_for('static', filename='attentiongraph.png')}}" width="600px" height="150px" />
       </div>
       <p>1. Give them a compliment and they will begin paying attention</p>
-      <p>2. With their focus now on your words, deliver a critique.  Warning: attention levels will immediately drop</p>
-      <p>3. Before you lose them, say another compliment.  There is a better chance they will have heard the critique in the middle.</p>
+      <p>2. With their attention focused, deploy the critique.  Warning: attention levels will immediately drop</p>
+      <p>3. Before they lose focus, give them another compliment.  There is an increased possibility they will have registered the critique in the middle.</p>
 
       <p><em>Why Donald Trump?</em></p>
-      <p>This is a popular technique in the workplace, so why not apply it to the halls of power?  A compliment that will hook Trump can be extremely simple: mindless jingoism, pure lies, or just his name rendered in shiny dollar signs.</p>
+      <p>This is a popular technique in the workplace, so why not apply it to the halls of power?  A compliment that will hook Trump can be extremely simple: either mindless jingoism, pure fiction, or just his name rendered in shiny dollar signs.</p>
 
       <p><em>Why aren't you doing something better with your time?</em></p>
-      <p>That's a great idea! After tweeting, get more involved by contacting your congresspeople(LINK)!</p>
+      <p>That's a great idea! After tweeting, get more involved by <a href="https://whoismyrepresentative.com/">contacting your congresspeople!</a></p>
 
 
     </div>
