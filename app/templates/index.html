@@ -11,19 +11,19 @@
     <title>Trump Compliment Sandwich</title>
 
 <style>
-/* body{
-  background-color:#ffae00
-} */
+body{
+  background-color:#e8d2c0
+}
 .tweet1 {
   font-size:1.5rem;
-  background:#ccaa77;
+  background:#c9b7a8;
   color:black;
   text-align: center;
 }
 
 .tweet2 {
   font-size:1.5rem;
-  background:#dc5a5f;
+  background:#dda083;
   color:black;
   text-align: center;
 }
@@ -41,7 +41,7 @@
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <img class="img-fluid" src="{{url_for('static', filename='logo.jpg')}}" />
+      <img class="img-fluid" src="{{url_for('static', filename='logo.png')}}" />
     </div>
   </div>
 </div>
@@ -50,17 +50,17 @@
 <div class="container">
 <div class="d-flex align-items-center tweet1">
   <div class="p-2 col-10">{{ tweetIntro }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpintro.jpg')}}" alt="Donald Trump looking smug"  /></div>
+  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpintro.png')}}" alt="Donald Trump looking smug"  /></div>
 </div>
 
 <div class="d-flex align-items-center tweet2">
   <div class="p-2 col-10">{{ tweetMid }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpmid.jpg')}}" alt="Donald Trump looking angry"/></div>
+  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpmid.png')}}" alt="Donald Trump looking angry"/></div>
 </div>
 
 <div class="d-flex align-items-center tweet1">
   <div class="p-2 col-10">{{ tweetOutro }}</div>
-  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpoutro.jpg')}}" alt="Donald Trump trying to look smug"/></div>
+  <div class="p-2 col-2"><img class="img-fluid" src="{{url_for('static', filename='trumpoutro.png')}}" alt="Donald Trump trying to look smug"/></div>
 </div>
 </div>
 
